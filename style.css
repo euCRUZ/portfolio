@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --cor-primaria: #000000;
+    --cor_secundaria: #F6F6F6;
+    --cor_terciaria: #22D4FD;
+    --fonte-principal: 'Krona One', sans-serif;
+    --fonte2: "Montserrat", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor_secundaria);
+}
+
+.topo {
+    padding: 5% 0% 0% 8%;
+}
+
+.topo_menu {
+    display: flex;
+    gap: 80px;
+}
+
+.topo_menu_link {
+    font-family: var(--fonte2);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor_terciaria);
+    text-decoration: none;
+}
+
+.topo_menu_link:hover {
+    transition: 0.4s;
+    transform: scale(0.8);
+}
+
+.topo_menu_link:not(:hover) {
+    transition: 0.4s;
+}
+
+.apresentacao {
+    /* superior | horizontal | inferior */
+    padding: 3% 8% 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5.125rem;
+}
+
+.apresentacao__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__projetos {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    /* superior | direita | inferior | esquerda */
+    padding: 24px 1px 0;
+    gap: 45px;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 2.5rem;
+    font-family: var(--fonte-principal);
+}
+
+.titulo-destaque {
+    color: var(--cor_terciaria);
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 1.5rem;
+    font-family: var(--fonte2);
+}
+
+.apresentacao__conteudo__texto_projetos {
+    font-size: 1.5rem;
+    font-family: var(--fonte2);
+    width: 125%;
+    text-align: justify;
+}
+
+.apresentacao__conteudo__texto__jogos {
+    width: 125%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    font-size: 1.5rem;
+    font-family: var(--fonte2);
+    text-align: justify;
+}
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.apresentacao__links__subtitulo {
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.rodape {
+    padding: 24px;
+    color: black;
+    background-color: var(--cor_terciaria);
+    text-align: center;
+    font-family: var(--fonte2);
+    font-style: italic;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* foto giovanni cruz: */
+.foto {
+    width: 50%;
+    border-radius: 4.5% 20%;
+    position: relative;
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.foto:hover {
+    transition: 0.4s;
+    border-radius: 5%;
+    box-shadow: 10px 10px 10px var(--cor_terciaria), 0 0 40px rgba(255, 255, 255, 0.8);
+    transform: translateX(-0.3125rem);
+}
+
+.foto:not(:hover) {
+    transition: 0.4s;
+}
+
+/* fotos UAW Vendas */
+.foto_uaw {
+    --cor-uaw: #FF8B00;
+    background: linear-gradient(var(--cor-primaria), var(--cor-primaria)) padding-box,
+        linear-gradient(145deg, transparent 0%, var(--cor-uaw), #ffffff) border-box;
+    border: 5px solid transparent;
+    box-shadow: 0px 0px 3px var(--cor-uaw), 0px 0px 6px #ffffff;
+    border-radius: 10% 5%;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    scale: 0.9;
+}
+
+.foto_uaw:hover {
+    background: linear-gradient(var(--cor-primaria), var(--cor-primaria)) padding-box,
+        linear-gradient(230deg, transparent 0%, var(--cor-uaw), #ffffff) border-box;
+    transition: 0.4s;
+    transform: scale(0.95);
+}
+
+.foto_uaw:not(:hover) {
+    transition: 0.4s;
+}
+
+.fotos_comercial_uawvendas {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.25rem;
+    /* superior | direita | inferior | esquerda */
+    padding: 0.2% 0% 0% 5%;
+
+}
+
+
+/* redes sociais: */
+.apresentacao__links__link1 {
+    --cor-hover1: #0D1117;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid #ece8fad6;
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor_secundaria);
+    font-family: var(--fonte2);
+}
+
+.apresentacao__links__link1:hover {
+    /* background-color: #272727; */
+    color: white;
+    border: 2px solid var(--cor-hover1);
+    background-color: var(--cor-hover1);
+    box-shadow: 0 0 20px rgba(229, 211, 255, 0.8);
+}
+
+.apresentacao__links__link2 {
+    /* background-color: #22D4FD; */
+    --cor-hover2: #0274b3;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--cor-hover2);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor_secundaria);
+    font-family: var(--fonte2);
+}
+
+.apresentacao__links__link2:hover {
+    /* background-color: #272727; */
+    color: white;
+    background-color: var(--cor-hover2);
+    border: 2px solid var(--cor-hover2);
+    box-shadow: 0 0 1em 0.25em var(--cor-hover2);
+    box-shadow: 0 0 20px rgba(2, 116, 179, 0.8);
+}
+
+.apresentacao__links__link3 {
+    /* background-color: #22D4FD; */
+    --cor-hover3: #eb4664;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--cor-hover3);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor_secundaria);
+    font-family: var(--fonte2);
+}
+
+.apresentacao__links__link3:hover {
+    /* background-color: #272727; */
+    color: white;
+    border: 2px solid var(--cor-hover3);
+    background-color: var(--cor-hover3);
+    box-shadow: 0 0 20px rgba(235, 70, 100, 0.8);
+}
+
+.apresentacao__links__link4 {
+    /* background-color: #22D4FD; */
+    --cor-hover3: #dc4c41;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--cor-hover3);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor_secundaria);
+    font-family: var(--fonte2);
+}
+
+.apresentacao__links__link4:hover {
+    /* background-color: #272727; */
+    color: white;
+    border: 2px solid var(--cor-hover3);
+    background-color: var(--cor-hover3);
+    box-shadow: 0 0 20px rgba(235, 70, 100, 0.8);
+}
+
+.icons {
+    filter: brightness(0%) invert(100%)
+}
+
+
+@media (max-width: 1200px) {
+    .topo {
+        padding: 8%;
+    }
+
+    .topo_menu {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 6%;
+        padding-top: 1%;
+        padding-bottom: 9.5%;
+        width: fit-content;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
+
+    .rodape {
+        padding: 16px;
+    }
+
+    .apresentacao__conteudo__projetos {
+        /* superior | direita | inferior | esquerda */
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        display: flexbox;
+    }
+
+    .apresentacao__conteudo__texto_projetos {
+        width: auto;
+        text-align: justify;
+    }
+
+    .apresentacao__conteudo__texto__jogos {
+        width: auto;
+        text-align: justify;
+    }
+
+    .fotos_comercial_uawvendas {
+        display: flexbox;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        /* superior | direita | inferior | esquerda */
+        padding: 0.2% 0% 0% 5%;
+    }
+}
+
+.titulo_lista {
+    font-family: var(--fonte-principal);
+    font-weight: 300;
+    font-size: 1.8rem;
+}
+
+.jogos_link {
+    --cor-hover1: #0D1117;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    gap: 16px;
+    border: 2px solid #ece8fad6;
+    width: 16%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 1.34rem 2rem;
+    text-decoration: none;
+    color: var(--cor_secundaria);
+    font-family: var(--fonte2);
+}
+
+.jogos_link:hover {
+    color: white;
+    border: 2px solid var(--cor-hover1);
+    background-color: var(--cor-hover1);
+    box-shadow: 0 0 20px rgba(229, 211, 255, 0.8);
+}
