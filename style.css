@@ -145,42 +145,6 @@ body {
     transition: 0.4s;
 }
 
-/* fotos UAW Vendas */
-.foto_uaw {
-    --cor-uaw: #FF8B00;
-    background: linear-gradient(var(--cor-primaria), var(--cor-primaria)) padding-box,
-        linear-gradient(145deg, transparent 0%, var(--cor-uaw), #ffffff) border-box;
-    border: 5px solid transparent;
-    box-shadow: 0px 0px 3px var(--cor-uaw), 0px 0px 6px #ffffff;
-    border-radius: 10% 5%;
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    scale: 0.9;
-}
-
-.foto_uaw:hover {
-    background: linear-gradient(var(--cor-primaria), var(--cor-primaria)) padding-box,
-        linear-gradient(230deg, transparent 0%, var(--cor-uaw), #ffffff) border-box;
-    transition: 0.4s;
-    transform: scale(0.95);
-}
-
-.foto_uaw:not(:hover) {
-    transition: 0.4s;
-}
-
-.fotos_comercial_uawvendas {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 0.25rem;
-    /* superior | direita | inferior | esquerda */
-    padding: 0.2% 0% 0% 5%;
-
-}
-
-
 /* redes sociais: */
 .apresentacao__links__link1 {
     --cor-hover1: #0D1117;
@@ -316,61 +280,8 @@ body {
         padding: 16px;
     }
 
-    .apresentacao__conteudo__projetos {
-        /* superior | direita | inferior | esquerda */
-        display: flex;
-        justify-content: center;
-        width: 90%;
-        display: flexbox;
-    }
-
-    .apresentacao__conteudo__texto_projetos {
-        width: auto;
-        text-align: justify;
-    }
-
-    .apresentacao__conteudo__texto__jogos {
-        width: auto;
-        text-align: justify;
-    }
-
-    .fotos_comercial_uawvendas {
-        display: flexbox;
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem;
-        /* superior | direita | inferior | esquerda */
-        padding: 0.2% 0% 0% 5%;
-    }
-}
-
 .titulo_lista {
     font-family: var(--fonte-principal);
     font-weight: 300;
     font-size: 1.8rem;
-}
-
-.jogos_link {
-    --cor-hover1: #0D1117;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    gap: 16px;
-    border: 2px solid #ece8fad6;
-    width: 16%;
-    text-align: center;
-    border-radius: 8px;
-    font-size: 1.5rem;
-    font-weight: 600;
-    padding: 1.34rem 2rem;
-    text-decoration: none;
-    color: var(--cor_secundaria);
-    font-family: var(--fonte2);
-}
-
-.jogos_link:hover {
-    color: white;
-    border: 2px solid var(--cor-hover1);
-    background-color: var(--cor-hover1);
-    box-shadow: 0 0 20px rgba(229, 211, 255, 0.8);
 }
