@@ -26,6 +26,7 @@ body {
 .topo_menu {
     display: flex;
     gap: 80px;
+    
 }
 
 .topo_menu_link {
@@ -94,13 +95,14 @@ body {
 
 .foto {
     width: 50%;
-    border-radius: 4.5% 20%;
+    border-radius: 15%;
     position: relative;
     transition: transform 0.4s, box-shadow 0.4s;
 }
 
 .foto:hover {
     border-radius: 5%;
+    transition: transform 0.4s;
     box-shadow: 10px 10px 10px var(--cor_terciaria), 0 0 40px rgba(255, 255, 255, 0.8);
     transform: translateX(-0.3125rem);
 }
